@@ -5,5 +5,5 @@ package _02_Chat_Application;
  */
 
 public class ChatApp {
-
+	// see https://github.com/SquawkyToucan/Console-IM for a fully fledged application
 }

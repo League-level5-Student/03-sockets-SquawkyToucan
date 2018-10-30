@@ -31,7 +31,7 @@ public class ClientGreeter {
 			outputStream.writeUTF("Client connected to server");
 			// 7. Create a DataInputStream object. When initializing it, use the Server
 			// object you created in step 4 to call the getInputStream() method.
-			DataInputStream dataInputStream = (DataInputStream) socket.getInputStream();
+			DataInputStream dataInputStream = new DataInputStream(socket.getInputStream());
 			// 8. Use the DataInputStream object to print a message from the server using
 			// the readUTF() method.
 			System.out.println(dataInputStream.readUTF());
